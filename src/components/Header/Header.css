@@ -1,0 +1,28 @@
+.header-section {
+    background-color: rgb(6, 207, 207);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 5px;
+    padding: 10px;
+    color: black;
+}
+
+@media screen and (max-width: 650px) {
+    .header-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .navigation{
+        margin-bottom: 20px;
+        padding-left: 20px;
+    }
+}

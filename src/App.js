@@ -1,10 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Header from './components/Header/Header';
+
 
 function App() {
+  // const [cat, setCat] = useState([]);
+  // console.log(cat);
+
+
+
+  // useEffect(() => {
+  //   fetch('petsfakedata.json')
+  //     .then(res => res.json())
+  //     .then(data => setCat(data));
+
+  // }, [])
   return (
     <div className="App">
-      <h1>Hii. This is first component of this website</h1>
+      <Header></Header>
     </div>
   );
 }
