@@ -4,7 +4,7 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import './PetsDataShowing.css'
 
 
-const PetsDataShowing = ({pet}) => {
+const PetsDataShowing = ({pet, addToCartBtn}) => {
     const {name, img, category, price} = pet
     return (
         <div className='pets'>
@@ -12,7 +12,7 @@ const PetsDataShowing = ({pet}) => {
             <h3>{name}</h3>  
             <p>Category: {category}</p> 
             <p>Price: {price}$</p>  
-            <button className='add-to-cart-btn'>Add To Cart  <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon> </button>       
+            <button onClick={()=> addToCartBtn(pet)} className='add-to-cart-btn'>Add To Cart  <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon> </button>       
         </div>
     );
 };
