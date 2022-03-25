@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [PetStore App](https://a-pet-store-website.netlify.app/).
+This is the website that i created by react -  [PetStore App](https://a-pet-store-website.netlify.app/).
 
 ## Available Scripts
 

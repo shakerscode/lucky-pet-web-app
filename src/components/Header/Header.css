@@ -1,5 +1,5 @@
 .header-section {
-    background-color: rgb(6, 207, 207);
+    background-color: rgb(33, 228, 235);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
