@@ -3,7 +3,8 @@ import './OrderCart.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRemove } from '@fortawesome/free-solid-svg-icons'
 
-const OrderCart = ({info}) => {
+const OrderCart = ({info }) => {
+    
    const {name, img} = info;
   
     return (

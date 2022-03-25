@@ -17,10 +17,23 @@ const PetShop = () => {
     //this state for loading pet  details
     const [petInfo, setPetInfo] = useState([]);
 
+
     const addToCartBtn = (pet) => {
 
         const newPetInfoCart = [...petInfo, pet];
         setPetInfo(newPetInfoCart);
+    }
+
+    //This is choose fav one btn
+    const [favOne, setFavOne] = useState([]);
+    console.log(favOne);
+
+
+    const chooseBtn = (petInfos) => {
+        const randomNum = Math.floor(Math.random() * 4);
+        const newFav = (petInfos[randomNum]);
+        setFavOne(newFav);
+
     }
 
 
@@ -36,8 +49,10 @@ const PetShop = () => {
                 <div className='last-half'>
                     <h3>Order Details</h3>
                     {
-                        petInfo.map((info) => <OrderCart key={info.id} info={info}></OrderCart>)
+                        petInfo.map((info) => <OrderCart favOne={favOne} key={info.key} info={info}></OrderCart>)
                     }
+                    <button className='btn' onClick={() => chooseBtn(petInfo)} >Choose Best One</button> <br />
+                    <button className='btn' >Choose Again</button>
 
                 </div>
             </div>
