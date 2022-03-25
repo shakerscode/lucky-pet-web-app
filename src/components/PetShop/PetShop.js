@@ -16,7 +16,7 @@ const PetShop = () => {
     }, [])
     //this state for loading pet  details
     const [petInfo, setPetInfo] = useState([]);
-    
+
     const addToCartBtn = (pet) => {
 
         const newPetInfoCart = [...petInfo, pet];
@@ -34,7 +34,11 @@ const PetShop = () => {
                     }
                 </div>
                 <div className='last-half'>
-                    <OrderCart key={petInfo.id} petInfo={petInfo}></OrderCart>
+                    <h3>Order Details</h3>
+                    {
+                        petInfo.map((info) => <OrderCart key={info.id} info={info}></OrderCart>)
+                    }
+
                 </div>
             </div>
         </div>

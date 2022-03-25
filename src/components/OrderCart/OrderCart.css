@@ -1,0 +1,15 @@
+.single-pet-info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 2px 3px 10px lightslategray;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: white;
+}
+.single-pet-info img{
+    width: 70px;
+    border-radius: 10%;
+}

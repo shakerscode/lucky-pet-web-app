@@ -1,15 +1,16 @@
 import React from 'react';
+import './OrderCart.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRemove } from '@fortawesome/free-solid-svg-icons'
 
-const OrderCart = ({petInfo}) => {
-   
-    let name = {};
-     for(const info of petInfo){
-         const newName = info.name;
-         name = newName;
-     }
+const OrderCart = ({info}) => {
+   const {name, img} = info;
+  
     return (
-        <div>
-            <h3>Order Details</h3>
+        <div className='single-pet-info'>
+            <img src={img} alt={name} width={'100px'} />
+            <h4>{name}</h4>
+            <button> <FontAwesomeIcon icon={faRemove}></FontAwesomeIcon> </button>
         </div>
     );
 };
