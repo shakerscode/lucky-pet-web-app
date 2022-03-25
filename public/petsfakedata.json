@@ -155,31 +155,5 @@
     "img": "https://img.freepik.com/free-photo/beautiful-gray-scottish-fold-cat-lies-floor-room_290431-22113.jpg?size=626&ext=jpg",
     "shipping": 20,
     "quantity": 0
-  },
-  {
-    "id": "e4220958-06d2-4d50-96fa-0163a563f43d",
-    "key": "e422095-06d2-4d50-96fa-0163af43d",
-    "category": "Cat",
-    "name": "Siamese",
-    "price": 3148,
-    "stock": 41,
-    "ratings": 3,
-    "ratingsCount": 4483,
-    "img": "https://img.freepik.com/free-photo/cute-little-kitten-walking-grass_416511-3426.jpg",
-    "shipping": 8,
-    "quantity": 0
-  },
-  {
-    "id": "ae69f0e4-559c-4b24-8032-80b63f9b5073",
-    "key": "ae69f0e-559c-4b24-8032-80b63f073",
-    "category": "Cat",
-    "name": "American Shorthair",
-    "price": 2122,
-    "stock": 43,
-    "ratings": 4,
-    "ratingsCount": 1239,
-    "img": "https://d17fnq9dkz9hgj.cloudfront.net/breed-uploads/2018/08/american-shorthair-detail.jpg?",
-    "shipping": 27,
-    "quantity": 0
   }
 ]

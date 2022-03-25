@@ -22,12 +22,6 @@ nav a {
         gap: 10px;
     }
     nav a{
-        display: block;
-        text-align: center;
-    }
-    .navigation{
-        margin-bottom: 20px;
-        padding-left: 20px;
-        
+        display: none; 
     }
 }
