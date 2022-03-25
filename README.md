@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [PetStore App](https://a-pet-store-website.netlify.app/).
 
 ## Available Scripts
 
