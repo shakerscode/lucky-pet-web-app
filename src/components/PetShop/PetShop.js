@@ -19,7 +19,7 @@ const PetShop = () => {
 
     //this state for loading pet  details
     const [petInfo, setPetInfo] = useState([]);
-    // console.log(petInfo);
+
 
 
     const addToCartBtn = (pet) => {
@@ -27,7 +27,7 @@ const PetShop = () => {
         setPetInfo(newPetInfoCart);
     }
 
-    //This is choose fav one btn
+    //This is choose favOne btn
     const [favOne, setFavOne] = useState([]);
  
 
@@ -36,11 +36,16 @@ const PetShop = () => {
         const randomNum = Math.floor(Math.random() * 3);
         const newFav = (petInfos[randomNum]);
         setFavOne(newFav);
+        setPetInfo([newFav]);
 
     }
 
     //This is remove btn
-
+    const removeBtn = () =>{
+        console.log('clicked')
+        setPetInfo([]);
+        setFavOne([])
+    }
     
 
     return (
@@ -56,12 +61,12 @@ const PetShop = () => {
                     <div className='single-item'>
                         <SingleCart favPet = {favOne}></SingleCart>
                     </div>
-                    <h3>Order Details</h3>
+                    <h3>Your Pet Details</h3>
                     {
                         petInfo.map((info) => <OrderCart key={info.key} info={info} favInfo = {favOne} ></OrderCart>)
                     }
                     <button className='btn' onClick={() => chooseBtn(petInfo)} >Choose Best One</button> <br />
-                    <button className='btn' >Choose Again</button>
+                    <button className='btn' onClick={() => removeBtn()} >Choose Again</button>
 
                 </div>
             </div>

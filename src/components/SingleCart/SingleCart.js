@@ -8,8 +8,7 @@ const SingleCart = ({favPet}) => {
         <div className='single-pet'>
             <h4>Your Lucky Pet</h4>
             <img src={img}  width={'100px'} />  
-            <h5>{name}</h5>
-
+            <h3>{name}</h3>
         </div>
     );
 };
