@@ -7,7 +7,7 @@ import './PetShop.css'
 const PetShop = () => {
     //this state for loading data
     const [pets, setPet] = useState([]);
-   
+
 
 
     useEffect(() => {
@@ -20,16 +20,20 @@ const PetShop = () => {
     //this state for loading pet  details
     const [petInfo, setPetInfo] = useState([]);
 
-
-
     const addToCartBtn = (pet) => {
+
         const newPetInfoCart = [...petInfo, pet];
-        setPetInfo(newPetInfoCart);
+        if (newPetInfoCart.length <= 4) {
+            setPetInfo(newPetInfoCart);
+        }
+        else {
+            alert('You are not able to add more then four items.')
+        };
     }
 
     //This is choose favOne btn
     const [favOne, setFavOne] = useState([]);
- 
+
 
 
     const chooseBtn = (petInfos) => {
@@ -41,12 +45,11 @@ const PetShop = () => {
     }
 
     //This is remove btn
-    const removeBtn = () =>{
-        console.log('clicked')
+    const removeBtn = () => {
         setPetInfo([]);
         setFavOne([])
     }
-    
+
 
     return (
         <div className='container'>
@@ -59,11 +62,11 @@ const PetShop = () => {
                 </div>
                 <div className='last-half'>
                     <div className='single-item'>
-                        <SingleCart favPet = {favOne}></SingleCart>
+                        <SingleCart favPet={favOne}></SingleCart>
                     </div>
                     <h3>Your Pet Details</h3>
                     {
-                        petInfo.map((info) => <OrderCart key={info.key} info={info} favInfo = {favOne} ></OrderCart>)
+                        petInfo.map((info) => <OrderCart key={info.key} info={info} favInfo={favOne} ></OrderCart>)
                     }
                     <button className='btn' onClick={() => chooseBtn(petInfo)} >Choose Best One</button> <br />
                     <button className='btn' onClick={() => removeBtn()} >Choose Again</button>
