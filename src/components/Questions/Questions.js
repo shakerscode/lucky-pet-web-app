@@ -8,7 +8,7 @@ const Questions = () => {
                 <div>
                     <h1>How React Works?</h1>
                     <hr className='hr' />
-                    <p><b>Answer:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet voluptas eos minima enim fuga quasi tempora voluptatibus sint! Adipisci, aliquid?</p>
+                    <p><b>Answer:</b> React is a JS library that build user interfaces. React library creates react element. React Dom receive those element and render them to the browser.  React has it's own virtual DOM. React compares Browser DOM with virtual DOM and makes a list of things that have changed or need to be updated. Than within a one process, React updates them according to that list.</p>
                 </div>
                 <div>
                     <h1>What is the difference between props and state?</h1>

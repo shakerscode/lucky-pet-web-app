@@ -6,10 +6,10 @@
 }
 .hr{
 border: 0.5px solid rgba(4, 15, 63, 0.911);
-width: 60%;
+width: 30%;
 margin: 20px auto;
 }
 .hr-in-p{
     border: 2px dotted rgb(6, 63, 90);
-    width: 40%;
+    width: 20%;
 }
